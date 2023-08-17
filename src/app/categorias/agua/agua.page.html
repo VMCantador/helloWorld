@@ -1,13 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button>Button</ion-back-button>
+    </ion-buttons>
     <ion-title>Agua Mineral</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">agua</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <ion-searchbar mode="ios" animated="true" placeholder="Buscar produto"></ion-searchbar>
+
+  <ion-item *ngFor="let produto of listaProdutos">
+      <ion-thumbnail slot="start">
+        <img src="https://bcdn.products.pcc.eu/wp-content/uploads/2022/09/FOT1-pH-wody.jpg" />
+      </ion-thumbnail>
+
+      <ion-label>
+        <h2>{{produto.nome}}</h2>
+        <h4>{{produto.descricao}}</h4>
+      </ion-label>
+
+      <ion-badge color="dark">{{produto.valor}}</ion-badge>
+
+      <ion-button slot="end" expand="block">
+        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+      </ion-button>
+
+  </ion-item>
 </ion-content>
