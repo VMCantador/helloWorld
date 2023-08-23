@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BdtempService } from 'src/app/services/bdtemp.service';
 
 @Component({
   selector: 'app-agua',
@@ -16,9 +17,13 @@ export class AguaPage implements OnInit {
     {nome: "Pureza Vital", descricao: "copo 180 ml", valor: 1.50}
   ]
 
-  constructor() { }
+  constructor(public bdtemp: BdtempService) { }
 
   ngOnInit() {
+  }
+
+  addProdutoCarrinho(produto: any){
+    this.bdtemp.addProdutoCarrinho(produto);
   }
 
 }
