@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'suco',
     loadChildren: () => import('./categorias/suco/suco.module').then( m => m.SucoPageModule)
+  },  {
+    path: 'carrinho',
+    loadChildren: () => import('./carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
   },
+
 
 ];
 

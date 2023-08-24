@@ -3,7 +3,16 @@
     <ion-buttons slot="start">
       <ion-back-button>Button</ion-back-button>
     </ion-buttons>
+
     <ion-title>Agua Mineral</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button routerLink="/carrinho">
+        <ion-icon name="cart-outline"></ion-icon>
+        <ion-badge color="vmc-contrast">{{qtdeItensCarrinho}}</ion-badge>
+      </ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
@@ -13,7 +22,7 @@
 
   <ion-item *ngFor="let produto of listaProdutos">
       <ion-thumbnail slot="start">
-        <img src="https://bcdn.products.pcc.eu/wp-content/uploads/2022/09/FOT1-pH-wody.jpg" />
+        <img [src]="produto.img" />
       </ion-thumbnail>
 
       <ion-label>

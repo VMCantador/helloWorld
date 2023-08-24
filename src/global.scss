@@ -30,7 +30,7 @@ ion-header{
   ion-toolbar{
     --background: var(--ion-color-vmc);
 
-    ion-back-button{
+    ion-back-button, ion-button{
       color: var(--ion-color-vmc-contrast);
     }
 
