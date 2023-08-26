@@ -11,12 +11,11 @@ export class RefrigerantePage implements OnInit {
   qtdeItensCarrinho = 0;
 
   listaProdutos = [
-    {nome: "Minalba", descricao: "pet de 500 ml", valor: 2.49, img:'https://samsclub.vtexassets.com/arquivos/ids/175670-800-auto?v=638001383415000000&width=800&height=auto&aspect=true'},
-    {nome: "Minalba", descricao: "pet de 1.5 Lts", valor: 5.50, img:'https://bretas.vtexassets.com/arquivos/ids/179178-800-auto?v=638243328258030000&width=800&height=auto&aspect=true'},
-    {nome: "Pureza Vital", descricao: "pet de 500 ml", valor: 2.65, img:'https://www.imigrantesbebidas.com.br/bebida/images/products/full/2823-agua-mineral-pureza-vital-sem-gas-510-ml.jpg'},
-    {nome: "Pureza Vital", descricao: "pet de 1.5 Lts", valor: 6.00, img:'https://www.emporionestle.com.br/media/catalog/product/a/g/agua-mineral-nestle-pureza-vital.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265'},
-    {nome: "Pureza Vital", descricao: "pet de 5 Lts", valor: 9.50, img:'https://www.nestlepurezavital.com.br/sites/g/files/xknfdk1096/files/19_NPV_550x750.png'},
-    {nome: "Cristal", descricao: "copo 180 ml", valor: 1.50, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlXliZx3cScuqogcRDFrLsYQcRYTSf3CVDUA&usqp=CAU'}
+    {nome: "Coca Cola", descricao: "2 Litros", valor: 7.49, img:'https://tdc099.vtexassets.com/arquivos/ids/220110/FOTOSVTEX.jpg?v=638200233096670000'},
+    {nome: "Sprite", descricao: "2 Litros", valor: 6.50, img:'https://d2r9epyceweg5n.cloudfront.net/stores/001/043/122/products/sprite-2l1-e417cb819b95bee41a15698492209281-480-0.png'},
+    {nome: "Guaraná Antartica", descricao: "2 Litros", valor: 6.75, img:'https://d2r9epyceweg5n.cloudfront.net/stores/001/184/939/products/guarana-antartica-pet-2lts1-a8e968f3f6e76f013315892352692656-480-0.png'},
+    {nome: "Coca Cola", descricao: "Lata 350 ml", valor: 2.50, img:'https://www.imigrantesbebidas.com.br/img/bebida/images/products/full/1984-refrigerante-coca-cola-lata-350ml.jpg?s=ef1f9ccf20330fe8f998c65372625c77'},
+    {nome: "Refrigerante Jahuba 2 Litros", descricao: "Sabores", valor: 4.75, img:'https://img.sitemercado.com.br/produtos/433b8ca35eafc6af550f85dac88ace40c595a2b4c1490e87a652ce992f8e266a_full.jpg'}
   ]
 
   constructor(public bdtemp: BdtempService) { }

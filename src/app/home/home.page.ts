@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BdtempService } from '../services/bdtemp.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  qtdeItensCarrinho = 0;
+
+  constructor(public bdtemp: BdtempService) {}
+
+  buscarDadosCarrinho(){
+    this.qtdeItensCarrinho = this.bdtemp.buscar('qtdeItensCarrinho');
+  }
+
 
 }

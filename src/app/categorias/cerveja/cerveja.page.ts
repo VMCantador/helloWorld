@@ -11,12 +11,11 @@ export class CervejaPage implements OnInit {
   qtdeItensCarrinho = 0;
 
   listaProdutos = [
-    {nome: "Minalba", descricao: "pet de 500 ml", valor: 2.49, img:'https://samsclub.vtexassets.com/arquivos/ids/175670-800-auto?v=638001383415000000&width=800&height=auto&aspect=true'},
-    {nome: "Minalba", descricao: "pet de 1.5 Lts", valor: 5.50, img:'https://bretas.vtexassets.com/arquivos/ids/179178-800-auto?v=638243328258030000&width=800&height=auto&aspect=true'},
-    {nome: "Pureza Vital", descricao: "pet de 500 ml", valor: 2.65, img:'https://www.imigrantesbebidas.com.br/bebida/images/products/full/2823-agua-mineral-pureza-vital-sem-gas-510-ml.jpg'},
-    {nome: "Pureza Vital", descricao: "pet de 1.5 Lts", valor: 6.00, img:'https://www.emporionestle.com.br/media/catalog/product/a/g/agua-mineral-nestle-pureza-vital.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265'},
-    {nome: "Pureza Vital", descricao: "pet de 5 Lts", valor: 9.50, img:'https://www.nestlepurezavital.com.br/sites/g/files/xknfdk1096/files/19_NPV_550x750.png'},
-    {nome: "Cristal", descricao: "copo 180 ml", valor: 1.50, img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlXliZx3cScuqogcRDFrLsYQcRYTSf3CVDUA&usqp=CAU'}
+    {nome: "Brahma", descricao: "Fardo c/ 12 latas", valor: 25.59, img:'https://superprix.vteximg.com.br/arquivos/ids/202691-600-600/6d2e9c7d01f528c151d7b13faaebbf41_cerveja-brahma-chopp-350ml-pack-c-12-unidades---lata--_lett_1.jpg?v=637686068524030000'},
+    {nome: "Brahma", descricao: "300 ml", valor: 3.99, img:'https://chamadaposse.bidela.com.br/wp-content/uploads/2021/12/chama-da-posse_300ml-garrafa_24-ceveja-brahma.jpg'},
+    {nome: "Itaipava", descricao: "Fardo c/ 12 latas", valor: 23.35, img:'https://a-static.mlcdn.com.br/450x450/caixinha-de-cerveja-itaipava-lata-350ml-12-un/merceariaoliveirajunior/6e3883521d5f11ecbe2c4201ac185013/1011c8a076bd8f7a91b3ed0889e1dd98.jpeg'},
+    {nome: "Itaipava Premium", descricao: "Lata 350 ml", valor: 6.15, img:'https://rafasupervarejao.com.br/33156/7898377661527-cerveja-itaipava-premium-puro-malte-350ml.jpg'},
+    {nome: "Bavaria", descricao: "Fardo c/ 12 latas", valor: 19.90, img:'https://http2.mlstatic.com/D_NQ_NP_641601-MLB50235044023_062022-O.webp'}
   ]
 
   constructor(public bdtemp: BdtempService) { }
