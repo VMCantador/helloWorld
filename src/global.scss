@@ -41,3 +41,34 @@ ion-header{
     }
   }
 }
+
+ion-content{
+
+  ion-badge{
+    --background: var(--ion-color-vmc);
+
+  }
+
+  ion-button{
+    --background: var(--ion-color-vmc);
+    color: var(--ion-color-vmc-contrast);
+  }
+}
+
+ion-footer{
+
+  ion-toolbar{
+    --background: var(--ion-color-vmc);
+
+    ion-back-button, ion-button{
+      color: var(--ion-color-vmc-contrast);
+    }
+
+    ion-title, ion-label{
+      color: var(--ion-color-vmc-contrast);
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+}
