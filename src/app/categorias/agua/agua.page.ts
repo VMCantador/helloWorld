@@ -34,4 +34,7 @@ export class AguaPage implements OnInit {
     this.qtdeItensCarrinho = this.bdtemp.buscar('qtdeItensCarrinho');
   }
 
+  ionViewWillEnter() {
+    this.buscarDadosCarrinho();
+  }
 }

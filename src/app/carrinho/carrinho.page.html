@@ -13,8 +13,12 @@
 
     <ion-item *ngFor="let produto of listaProdutos; let i = index">
 
+      <ion-thumbnail slot="start">
+        <img [src]="produto.img" />
+      </ion-thumbnail>
+      
       <ion-label>
-        <h2 class="nomeProduto">{{ produto.nome }}</h2>
+        <h2 class="nomeProduto">{{ produto['nome']}}</h2>
         <h4>{{produto.descricao}}</h4>
       </ion-label>
 

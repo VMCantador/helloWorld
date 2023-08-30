@@ -33,4 +33,7 @@ export class SucoPage implements OnInit {
     this.qtdeItensCarrinho = this.bdtemp.buscar('qtdeItensCarrinho');
   }
 
+  ionViewWillEnter() {
+    this.buscarDadosCarrinho();
+  }
 }

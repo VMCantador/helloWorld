@@ -16,5 +16,7 @@ export class HomePage {
     this.qtdeItensCarrinho = this.bdtemp.buscar('qtdeItensCarrinho');
   }
 
-
+  ionViewWillEnter() {
+    this.buscarDadosCarrinho();
+  }
 }
